@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class GuestCreatesAccountTest < ActionDispatch::IntegrationTest
-  test 'user can create account' do 
+  test 'user can create account' do
     visit new_user_path
     fill_in "Username", with: "Clarence"
     fill_in "Password", with: "password"
